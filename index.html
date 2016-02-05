@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+
+	<!--  CSS Botstrap_skin.css  -->
+	<style>{color:#242424;font-size:13px}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{text-transform:uppercase}h1,.h1{font-size:23px}h2,.h2{font-size:20px}h3,.h3{font-size:18px}h4,.h4{font-size:15px}h5,.h5{font-size:13px}h6,.h6{font-size:12px}.lead{font-size:19px}a,a:hover,a:focus{color:#f27937}.carousel .item{height:500px;background-color:#777}.navbar-inverse{background-color:#242424}.navbar-inverse,.navbar-default{border:none}.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus{background-image:-moz-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:-O-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:-webkit-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:linear-gradient(to top,#F4893B 0%,#EF5F31 100%)}.navbar{border-radius:0;font-size:14px}.navbar-inverse .navbar-nav > li > a{color:#fff}.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus{color:#f27837;background-color:transparent}.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{background-color:#f27837;color:#fff}.dropdown-menu .divider{margin:2px 0}.nav > li > a{padding:15px 18px}.carousel-indicators .active{background-color:#f27837;border:none}.carousel-control{width:45px}.carousel-control.left,.carousel-control.right{background-image:none;background-color:rgba(0,0,0,0.52)}.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{font-size:14px}.carousel-caption{text-align:left;left:15%;right:15%;top:50px;text-shadow:none}.carousel-inner .h1{font-size:38px;text-transform:none;margin-bottom:20px}.carousel-inner p{margin-bottom:20px;max-width:450px}.carousel-inner small{color:#fff;display:block}.btn-primary{background-color:transparent;border-color:#fff}.btn-lg,.btn-group-lg > .btn{border-radius:3px;padding:5px 20px}.btn-primary:hover{background-color:transparent;border-color:#fff}.btn-primary:focus:focus{background-color:#f27837;border-color:#fff}.panel{-webkit-box-shadow:none;box-shadow:none}.panel-default >.panel-heading{background-color:#FF910C;border-bottom:none;box-shadow:0 0 0 1px #ff910c}.btn-warning{background-color:#FFCC51;border-color:#c97713;color:#242424}.input-group-addon{background-color:#ff910c;border-color:#ccc}.form-control:focus{border-color:#242424;-webkit-box-shadow:none;box-shadow:none}.input-group-btn > .btn-default{background-color:#ededed}.input-group-btn > .btn{color:#9d9d9d}.panel-title > a,.panel-title > small,.panel-title > .small,.panel-title > small > a,.panel-title > .small > a{color:#70420a;font-size:12px}.panel-collapse > .panel-body{background-color:#f1e9e0}.panel-group .panel + .panel{margin-top:-6px;border-bottom:8px solid #e77901}.panel-group .panel:last-child{border-bottom:none}.list-group-item{position:none}.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus{background-color:#f1f1f1;color:#242424;border-color:#ddd}.list-group-item.active:hover{background-color:#f5f5f5}a.list-group-item,button.list-group-item{background-color:#f1f1f1;color:#242424}a.list-group-item:hover,button.list-group-item:hover,a.list-group-item:focus,button.list-group-item:focus{color:#242424}.well{-webkit-box-shadow:none;box-shadow:none;background-color:#F1E9ED;border-color:#d5cdc3}.breadcrumb{padding:0;background-color:transparent}a,a:hover,a:focus{color:#777}.breadcrumb > .active{color:#000}.breadcrumb > li + li::before{content:'>';color:#777}
+	</style>
+	<!-- Load CSS Compilled without JS -->
+	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap_skin.css">
+	<link rel="stylesheet" href="_fonts.css">
+	<script type='text/javascript' src='js/lab.js'></script>
+
+</head>
+
+<body>
+<header class="main_head">
+	<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="img/logo.png" height="100" width="127" alt="Brand"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Главная</a></li>	
+				<li><a href="#">О компании</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Рекомендации</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Раздел 1</a></li>
+						<li><a href="#">Раздел 1</a></li>
+						<li><a href="#">Раздел 3 длинный предлинный</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Раздел...</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Законодательство</a></li>
+				<li><a href="#">Наши клиенты</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="nav navbar-nav navbar-right">
+			 <div class="lead phone_top">8(913) 907 01 37</div>
+			</div>
+		</div>
+	</div>
+</nav>
+</header>
+
+	<section class="s_slider">
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<div class="slide_img" style="background-image:url(img/slide_1.jpg)"></div>
+			<div class="container">
+				<div class="carousel-caption">
+					<div class="h1">Перепланировка помещений<small>в Новосибирске и Новосибирской области </small></div>
+					<p>Note: If you're viewing this page via a URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+					<a class="btn btn-lg btn-primary" href="#" role="button">Читать подробнее</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="slide_img" style="background-image:url(img/slide_2.jpg)"></div>
+			<div class="container">
+				<div class="carousel-caption">
+					<div class="h1">Перепланировка помещений<small>в Новосибирске и Новосибирской области </small></div>
+					<p>Note: If you're viewing this page via a URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Читать подробнее</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div><!-- /.carousel -->
+	</section>
+
+	<section class="s_main">
+		<div class="container">
+			<div class="row">
+				
+<div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
+<div class="content">
+	<h1>Перепланировка помощений по Новосибирску</h1>
+		<div class="tills">
+			<div class="row">
+				<div class="col-sm-6 till_item">
+						<div class="tt">
+								<a href="" class="tr">
+								<img src="img/vybor_tipa_proekta.jpg" width="415" height="200" alt="Alt">
+								<span class="till_content">
+								<span class="tc">
+									<span class="till_txt"><b>Согласование перепланировок квартир в Новосибирске</b>
+									</span>
+									</span>
+								</span>
+								</a>
+							</div>
+				</div>
+				<div class="col-sm-6 till_item">
+<div class="tt">
+								<a href="" class="tr">
+								<img src="img/home-builder-contractor.jpg" width="415" height="200" alt="Alt">
+								<span class="till_content">
+								<span class="tc">
+									<span class="till_txt"><b>Оценка фронта работ над большими проектами в НСО</b>
+									</span>
+									</span>
+								</span>
+								</a>
+							</div>
+
+				</div>
+				<div class="col-sm-6 till_item">
+<div class="tt">
+								<a href="" class="tr">
+								<img src="img/business_insurance.png" width="415" height="200" alt="Alt">
+								<span class="till_content">
+								<span class="tc">
+									<span class="till_txt"><b>Сбор всех необходимых документов для перепланировки</b>
+									</span>
+									</span>
+								</span>
+								</a>
+							</div>
+				</div>
+				<div class="col-sm-6 till_item">
+<div class="tt">
+								<a href="" class="tr">
+								<img src="img/till1.jpg" width="415" height="200" alt="Alt">
+								<span class="till_content">
+								<span class="tc">
+									<span class="till_txt"><b>Порядок согласования работ индивидуально для каждой квартиры</b>
+									</span>
+									</span>
+								</span>
+								</a>
+							</div>
+				</div>
+			</div>
+		</div>
+<div class="bens">
+	<div class="row">
+		<div class="col-md-3 ben_item">
+			<img src="img/ben_1.jpg" height="70" alt="Alt">
+			<h4>7 <span>лет</span></h4>
+			<small>На рынке</small>
+		</div>
+		<div class="col-md-3 ben_item">
+			<img src="img/ben_2.jpg" height="70" alt="Alt">
+			<h4>875 000<span> м<sup>2</sup></span></h4>
+			<small>согласовано за 2014 год</small>
+		</div>
+		<div class="col-md-3 ben_item">
+			<img src="img/ben_3.jpg" alt="Alt">
+			<h4>100<span> %</span></h4>
+			<small>гарантия качества</small>
+		</div>
+		<div class="col-md-3 ben_item">
+			<img src="img/ben_4.jpg" alt="Alt">
+			<h4>CPO<span></span></h4>
+			<small>лицензия</small>
+		</div>
+	</div>
+</div>
+<article>
+	<div class="row">
+		<div class="col-md-5 col-md-push-7">
+
+			<img src="img/map.png" alt="Map">
+
+		</div>
+
+		<div class="col-md-7 col-md-pull-5">
+
+			<p class="lead">Мы работаем в девяти столичных округах: <a href="">САО</a>, <a href="">ЦАО</a>, <a href="">ВАО</a>, <a href="">ЮВАО</a>,  <a href="">ЮАО</a>, <a href="">ЮЗАО</a>, <a href="">ЗАО</a> и <a href="">СЗАО</a>. Работа специалистов "Фортис" предполагает сбор необходимых документов и прохождение всех этапов согласования перепланировки квартир и других помещений.</p>
+			<p>
+				Компания "Фортис" оказывает весь спектр услуг по согласованию:
+			</p>
+			<ul>
+				<li>Согласование перепланировки квартир по проекту и эскизу</li>
+				<li>Cогласование перепланировки нежелых помещений</li>
+				<li>Согласование БТИ</li>
+				<li>Согласование остекления балконов и лоджий</li>
+				<li>Реконструкция зданий</li>
+			</ul>
+			<p>
+				То, что займет у владельца массу времени, наши специалисты произведут в кратчайшие сроки благодаря отработанной схеме и значительному опыту работы.
+			</p>
+			<p>
+				Стремление усовершенствовать свое желтще зачастую не удовлетворяется переклейкой обоев или заменой напольного покрытия. Чтобы сделать квартиру функциональной и комфортной, нередко требуется и стены передвинуть. Реализуя это намерение, необходимо совершать согласования перепланировки квартир.
+			</p>
+		</div>
+	</div>
+</article>
+<div class="wiyget_news">
+	<h4>Новости в сфере строительства</h4>
+	<div class="row">
+
+	<ul>
+
+		<li class="col-md-4 wn_item">
+		<div class="panel panel-default">
+	<div class="panel-body">
+		<p>
+			В среднем за квартиру в Новосибирске на вторичном ранке нужно выложить 8 млн. рублей. Среднестатистическая сделка по покупке квартиры на вторичном ранке столицы оценивается в 8,1 милл... 
+		</p>
+		<a class="more" href="#">Читать далее ></a>
+	</div>
+</div>
+
+		</li>
+		<li class="col-md-4 wn_item">
+	<div class="panel panel-default">
+	<div class="panel-body">
+		<p>
+			В среднем за квартиру в Новосибирске на вторичном ранке нужно выложить 8 млн. рублей. Среднестатистическая сделка по покупке квартиры на вторичном ранке столицы оценивается в 8,1 милл... 
+		</p>
+		<a class="more" href="#">Читать далее ></a>
+	</div>
+</div>
+		</li>
+		<li class="col-md-4 wn_item">
+	<div class="panel panel-default">
+	<div class="panel-body">
+		<p>
+			В среднем за квартиру в Новосибирске на вторичном ранке нужно выложить 8 млн. рублей. Среднестатистическая сделка по покупке квартиры на вторичном ранке столицы оценивается в 8,1 милл... 
+		</p>
+		<a class="more" href="#">Читать далее ></a>
+	</div>
+</div>
+		</li>
+
+	</ul>
+
+	</div>
+</div>
+
+
+	</div>
+</div>
+<div class="col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8">
+	<asside class="left_aside">
+		<div class="box box_search">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="form-group">
+	<div class="input-group">
+		<input class="form-control" type="text" placeholder="Поиск по сайту" required>
+		<span class="input-group-btn">
+			<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+		</span>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		<form class="box box_back">
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Бланк заявки</h4>
+		<button class="btn btn-warning">Отправить заявку</button>
+	</div>
+	<div class="panel-body">
+		
+		<div class="form-group">
+				<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		<input class="form-control" type="text" placeholder="Ваше Имя" required>
+				</div>
+				</div>
+				<div class="form-group">
+				<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+		<input class="form-control" type="text" placeholder="Ваш телефон" required>
+				</div>
+				</div>
+		</div>
+	</div>
+</form>
+	<div class="box_mnu">
+		<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingOne">
+			<h4 class="panel-title">
+				<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					Перепланировка <span class="arrow"><i class="glyphicon glyphicon-triangle-bottom"></i></span>
+				</a>
+			</h4>
+		</div>
+		<div style="height: 0px;" aria-expanded="false" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			<div class="list-group">
+	<a href="#" class="list-group-item active">
+		Cras justo odio
+	</a>
+	<a href="#" class="list-group-item">Dapibus ac facilisis in
+	</a>
+	<a href="#" class="list-group-item">Morbi leo risus
+	</a>
+</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingTwo">
+			<h4 class="panel-title">
+				<a class="" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					Оценка имущества <span class="arrow"><i class="glyphicon glyphicon-triangle-bottom"></i></span>
+				</a>
+			</h4>
+		</div>
+		<div style="" aria-expanded="true" id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+			<div class="list-group">
+	<a href="#" class="list-group-item active">
+		Cras justo odio
+	</a>
+	<a href="#" class="list-group-item">Dapibus ac facilisis in
+	</a>
+	<a href="#" class="list-group-item">Morbi leo risus
+	</a>
+</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingThree">
+			<h4 class="panel-title">
+				<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Паспорт объекта <span class="arrow"><i class="glyphicon glyphicon-triangle-bottom"></i></span>
+				</a>
+			</h4>
+		</div>
+		<div aria-expanded="false" id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			<div class="list-group">
+	<a href="#" class="list-group-item active">
+		Паспорт объекта
+	</a>
+	<a href="#" class="list-group-item">Dapibus ac facilisis in
+	</a>
+	<a href="#" class="list-group-item">Morbi leo risus
+	</a>
+</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="box box_arti">
+	
+<div class="panel panel-default">
+	<div class="panel-body">
+		
+<div id="asideCarousel" class="carousel slide carousel-fade asideCarousel" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+
+		<div class="item active">
+			<div class="aside_cont">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h4>
+			 <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+			<p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+			<a href=""><span><h6><u>Читать далее ></u></h6></span></a>
+			</div>
+		</div>
+			<div class="item">
+			<div class="aside_cont">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h4>
+			 <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+			<p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+			<a href=""><span><h6><u>Читать далее ></u></h6></span></a>
+			</div>
+		</div>
+
+	</div>
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#asideCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#asideCarousel" data-slide-to="1"></li>
+		<li data-target="#asideCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="aside_arrows">
+	<a class="left carousel-control" href="#asideCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#asideCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+	</div>
+
+</div>
+
+	</div>
+</div>
+
+</div>
+<div class="box">
+<div class="well">
+	<h4><b>Лицензия №1778</b></h4>
+	<p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+</div>
+</div>
+
+	</asside>
+	
+	</section>
+
+
+	<footer class="main_footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-sm-6 col-xs-6">
+		<div class="logo_wrap">
+			<img src="img/logo.png" alt="logo">
+		</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<strong>Европейское качество<br/> по стандартам РФ</strong>
+
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="lead footer_phone">
+				<b>8 (913) 907-01-37</b> <br>
+				<a href="" class="callback">заказать звонок</a>
+			</div>
+
+		</div>
+		<div class="col-md-2 col-sm-6 col-xs-6">
+			<a href="#" class="devel">
+				<small>разработка сайта</small>
+			<img src="img/logo_cwebs.png" height="29" width="118" alt="разработка сайтов">
+			</a>
+		</div>
+
+	</div>
+	</div>
+	</footer>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load CSS -->
+	<script>
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+		loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
+		loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
+		loadCSS("_main.css");                //User Styles: Main
+		loadCSS("_media.css");               //User Styles: Media
+	</script>
+
+	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
+	<script>var ms=document.createElement("link");ms.rel="stylesheet";
+		// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	</script>
+
+	<!-- Load Scripts -->
+	<script>
+		var scr = {"scripts":[
+		{"src" : "libs/modernizr/modernizr.js", "async" : false},
+		{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+		{"src" : "libs/bootstrap/js/bootstrap.min.js", "async" : false},
+		{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+</html>

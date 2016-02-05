@@ -1,0 +1,153 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.col-sm-6 .till_item {
+	padding: 0;
+}
+.tr img {
+	width: 340px;
+	height: 150px;
+}
+.phone_top {
+	position: absolute;
+	right: 0;
+}
+.main_head .navbar-collapse {
+	position: relative;
+}
+.main_head .navbar-nav {
+margin-top: 18px;
+}
+.box_back h4 {
+	margin-right: 3px;
+	font-size: 11px;
+}
+.box_back .btn-warning {
+	font-size: 11px;
+	padding: 5px 3px;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+margin-top: 8px;
+z-index: 10;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.ben_item {
+	float: left;
+		width: 240px;
+}
+.tt {
+		float:left
+}
+.till_item .tc {
+		padding-top: 45px;
+}
+.till_item .tt {
+		margin-bottom: 10px;
+}
+.till_txt {
+		font-size: 12px;
+}
+
+	.tr img {
+	width: 240px;
+	height: 130px;
+}
+	.wn_item .panel{
+	max-width: none;
+}
+.nav > li > a {
+	padding: 12px 9px;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	z-index: 2;
+	margin-top: 5px;
+}
+.main_footer .col-sm-6 {
+	margin-bottom: 20px;
+	min-height: 75px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	}
+.phone_top {
+	position: relative;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	z-index: 2;
+	margin-top: 5px;
+}
+.carousel-inner .h1 {
+	font-size: 2em;
+}
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.carousel-inner .h1 {
+	font-size: 1.7em;
+	line-height: 1;
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
